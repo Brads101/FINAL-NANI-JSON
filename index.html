@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #2c3e50, #4a5568); /* Dark gradient */
+    color: #f0f0f0; /* Light text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #e2e8f0; /* Light grayish blue */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    background: #2d3748; /* Dark bluish-gray */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #4a5568;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #cbd5e0; /* Soft light gray text */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4a5568; /* Dark gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #1a202c; /* Very dark gray background */
+    color: #f0f0f0; /* Light text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #63b3ed; /* Light blue focus */
+    box-shadow: 0 0 8px rgba(99, 179, 237, 0.8);
+}
+
+button {
+    background: #3182ce; /* Soft blue */
+    color: #f8f9fa; /* White text */
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: #2b6cb0; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+}
+
+#jsonOutput {
+    background-color: #1a202c; /* Very dark gray background */
+    padding: 15px;
+    border: 1px solid #4a5568;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    overflow: auto;
+    color: #cbd5e0; /* Light gray text */
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
